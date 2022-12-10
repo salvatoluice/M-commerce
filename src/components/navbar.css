@@ -1,0 +1,45 @@
+.app_navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    /* width: 100%; */
+    border-bottom: 1px solid gray;
+}
+
+.app_navbar-links ul {
+    display: flex;
+}
+
+.app_navbar-links ul li {
+    list-style: none;
+    margin-left: 1rem;
+}
+
+.app_navbar-links a {
+    text-decoration: none;
+    color: #000;
+}
+
+.app_navbar-links a:hover {
+    font-weight: bold;
+}
+
+.app_navbar-login {
+    display: flex;
+}
+
+.app_navbar-login > button {
+    margin-left: 1rem;
+    border: none;
+    outline: none;
+    padding: 10px;
+}
+
+.app_navbar-login > button:hover {
+    background: black;
+    cursor: pointer;
+    color: #fff;
+}
