@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 import './products.css';
 
 const Products = () => {
@@ -58,7 +59,7 @@ return (
             <img src={product.image} alt={product.title} />
             <h4>{product.title.substring(0, 12)}...</h4>
             <p>${product.price}</p>
-            <button>Buy This</button>
+            <Link to={`/products/${product.id}`}>Buy This</Link>
           </div>
         </>
       )

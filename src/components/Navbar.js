@@ -1,8 +1,10 @@
 import React from 'react'
 import './navbar.css'
 import { Link } from 'react-router-dom'
+import { useSelector } from 'react-redux'
 
 const Navbar = () => {
+    const state = useSelector((state) => state.handleCart)
   return (
     <div className='app_navbar'>
         <div className='app_navbar-logo'>
@@ -19,7 +21,7 @@ const Navbar = () => {
         <div className='app_navbar-login'>
             <Link to='/login'>Login</Link>
             <Link to='/signup'>Sign Up</Link>
-            <Link to='/cart'>Cart (0) </Link>
+            <Link to='/cart'>Cart ({state.length}) </Link>
         </div>
     </div>
   )
